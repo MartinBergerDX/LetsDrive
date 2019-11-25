@@ -1,10 +1,3 @@
-//
-//  BackendErrorParser.m
-//  playerhunter
-//
-//  Created by Martin on 3/29/17.
-//  Copyright © 2017 Playerhunter. All rights reserved.
-//
 
 #import "BackendErrorParser.h"
 #import "NSError+Convenience.h"

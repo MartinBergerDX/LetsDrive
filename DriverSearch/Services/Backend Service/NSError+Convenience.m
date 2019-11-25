@@ -1,10 +1,3 @@
-//
-//  NSError+Convenience.m
-//  playerhunter
-//
-//  Created by Martin on 3/29/17.
-//  Copyright © 2017 Playerhunter. All rights reserved.
-//
 
 #import "NSError+Convenience.h"
 

@@ -53,7 +53,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
-
+        ProductionServiceRegistry.instance.location.stop()
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {

@@ -14,12 +14,14 @@ struct TaxiRow: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(taxi.fleetType.rawValue)
-            Text(taxi.identifier)
-                .foregroundColor(.primary)
-                .font(.caption)
-            Text(taxi.coordinate.description)
-            Text(taxi.heading)
+            HStack {
+                Text("Vehicle no. " + taxi.identifier)
+                    .foregroundColor(.primary)
+                Spacer()
+                Text(taxi.fleetType.rawValue)
+            }
+            Text("Distance: " + taxi.distance)
+            .font(.caption)
         }
         .padding(.leading, 15)
     }

@@ -1,8 +1,10 @@
 
 #import "ProductionServiceRegistry.h"
+#import "DriverSearch-Swift.h"
 
 @interface ProductionServiceRegistry()
 @property (nonatomic, strong) id<BackendService> backend;
+@property (nonatomic, strong) LocationService* location;
 @end
 
 @implementation ProductionServiceRegistry
@@ -25,6 +27,14 @@ static id<ServiceRegistry> _instance;
     }
     _backend = [[BackendService alloc] initWithBackendConfiguration:[BackendConfiguration new]];
     return _backend;
+}
+
+- (LocationService*)location {
+    if (_location) {
+        return _location;
+    }
+    _location = [[LocationService alloc] init];
+    return _location;
 }
 
 @end

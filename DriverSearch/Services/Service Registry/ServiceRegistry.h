@@ -1,16 +1,13 @@
-//
-//  ServiceRegistry.h
-//  playerhunter
-//
-//  Created by Martin on 3/28/17.
-//  Copyright © 2017 Playerhunter. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import "BackendService.h"
+// do not include compiler generated swift-objc header
+
+@class LocationService; // evade circular dependency by bridging header and compiler generated swift-objc header
 
 @protocol ServiceRegistry
 @property (nonatomic, readonly) id<BackendService> backend;
+@property (nonatomic, readonly) LocationService* location;
 @end
 
 @protocol ServiceRegistryUser <NSObject>

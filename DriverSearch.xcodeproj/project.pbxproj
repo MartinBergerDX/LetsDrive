@@ -36,6 +36,7 @@
 		5B7E41682383E9F2001D53E3 /* TaxiListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E41672383E9F2001D53E3 /* TaxiListViewModel.swift */; };
 		5B7E416A2383F2B0001D53E3 /* TaxiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E41692383F2B0001D53E3 /* TaxiViewModel.swift */; };
 		5B7E416C238428F9001D53E3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E416B238428F9001D53E3 /* MapView.swift */; };
+		5BDD253E238BDBB800367ED5 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD253D238BDBB800367ED5 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		5B7E41672383E9F2001D53E3 /* TaxiListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiListViewModel.swift; sourceTree = "<group>"; };
 		5B7E41692383F2B0001D53E3 /* TaxiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiViewModel.swift; sourceTree = "<group>"; };
 		5B7E416B238428F9001D53E3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5BDD253D238BDBB800367ED5 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 			children = (
 				5B7BF2B0237CAF96006A7268 /* Service Registry */,
 				5B7BF2AF237CAF6D006A7268 /* Backend Service */,
+				5BDD253C238BDB9800367ED5 /* LocationService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -242,10 +245,10 @@
 			children = (
 				5B7BF2A0237CA027006A7268 /* BackendService.h */,
 				5B7BF29E237CA027006A7268 /* BackendService.m */,
-				5B7BF2AC237CAF1C006A7268 /* NSError+Convenience.h */,
-				5B7BF2AD237CAF1C006A7268 /* NSError+Convenience.m */,
 				5B7BF2A9237CAEAD006A7268 /* BackendErrorParser.h */,
 				5B7BF2AA237CAEAD006A7268 /* BackendErrorParser.m */,
+				5B7BF2AC237CAF1C006A7268 /* NSError+Convenience.h */,
+				5B7BF2AD237CAF1C006A7268 /* NSError+Convenience.m */,
 			);
 			path = "Backend Service";
 			sourceTree = "<group>";
@@ -296,6 +299,14 @@
 				5B7E415D238334E1001D53E3 /* Info.plist */,
 			);
 			path = DriverSearchTests;
+			sourceTree = "<group>";
+		};
+		5BDD253C238BDB9800367ED5 /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				5BDD253D238BDBB800367ED5 /* LocationService.swift */,
+			);
+			path = LocationService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +415,7 @@
 				5B7E416A2383F2B0001D53E3 /* TaxiViewModel.swift in Sources */,
 				5B7BF2A5237CA027006A7268 /* BackendService.m in Sources */,
 				5B29CE09237D4C7100AA4405 /* ReceivedTaxi.m in Sources */,
+				5BDD253E238BDBB800367ED5 /* LocationService.swift in Sources */,
 				5B7BF2A8237CA3BC006A7268 /* BackendGetTaxiRequest.m in Sources */,
 				5B3B506E238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift in Sources */,
 				5B7BF2A2237CA027006A7268 /* BackendRequest.m in Sources */,

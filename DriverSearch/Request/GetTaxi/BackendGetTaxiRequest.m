@@ -1,10 +1,3 @@
-//
-//  BackendGetTaxiRequest.m
-//  DriverSearch
-//
-//  Created by Martin on 11/13/19.
-//  Copyright © 2019 DebuggingHell. All rights reserved.
-//
 
 #import "BackendGetTaxiRequest.h"
 

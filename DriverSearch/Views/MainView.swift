@@ -27,6 +27,8 @@ struct MainView: View {
             .onAppear {
                 self.viewModel.load()
             }
+        }.onAppear {
+            ProductionServiceRegistry.instance.location.start()
         }
     }
 }
