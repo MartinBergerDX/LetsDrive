@@ -16,7 +16,7 @@ NSString * const kBackendServiceError403ForbiddenAccessNotification = @"BACKEND_
         self.backendConfiguration = backendConfiguration;
         NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
         sessionConfiguration.HTTPAdditionalHeaders = @{@"Accept": @"application/json"};
-        NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:nil delegateQueue:nil];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
         self.session = session;
     }
     return self;

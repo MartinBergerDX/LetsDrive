@@ -1,14 +1,14 @@
 //
-//  Taxi.m
+//  ReceivedTaxi.m
 //  DriverSearch
 //
 //  Created by Martin on 11/14/19.
 //  Copyright © 2019 DebuggingHell. All rights reserved.
 //
 
-#import "Taxi.h"
+#import "ReceivedTaxi.h"
 
-@implementation Taxi
+@implementation ReceivedTaxi
 
 - (instancetype)initWithBackendData:(id)data {
     if (self = [super init]) {

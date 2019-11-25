@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		5B004D96237C854B001AB962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B004D95237C854B001AB962 /* AppDelegate.swift */; };
 		5B004D98237C854B001AB962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B004D97237C854B001AB962 /* SceneDelegate.swift */; };
-		5B004D9A237C854B001AB962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B004D99237C854B001AB962 /* ViewController.swift */; };
 		5B004D9D237C854B001AB962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B004D9B237C854B001AB962 /* Main.storyboard */; };
 		5B004D9F237C854C001AB962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B004D9E237C854C001AB962 /* Assets.xcassets */; };
 		5B004DA2237C854C001AB962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B004DA0237C854C001AB962 /* LaunchScreen.storyboard */; };
-		5B29CE09237D4C7100AA4405 /* Taxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B29CE08237D4C7100AA4405 /* Taxi.m */; };
+		5B29CE09237D4C7100AA4405 /* ReceivedTaxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B29CE08237D4C7100AA4405 /* ReceivedTaxi.m */; };
 		5B29CE0C237D551600AA4405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B29CE0A237D550900AA4405 /* Foundation.framework */; };
+		5B3B506E238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3B506D238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift */; };
+		5B4FFF60238AC44A00C18BE5 /* BoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FFF5F238AC44A00C18BE5 /* BoundingBox.swift */; };
+		5B4FFF62238ACA7300C18BE5 /* TaxiAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4FFF61238ACA7300C18BE5 /* TaxiAnnotation.swift */; };
 		5B7BF2A2237CA027006A7268 /* BackendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF298237CA026006A7268 /* BackendRequest.m */; };
 		5B7BF2A3237CA027006A7268 /* BackendConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF29B237CA026006A7268 /* BackendConfiguration.m */; };
 		5B7BF2A4237CA027006A7268 /* ProductionServiceRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF29D237CA027006A7268 /* ProductionServiceRegistry.m */; };
@@ -22,20 +24,44 @@
 		5B7BF2A8237CA3BC006A7268 /* BackendGetTaxiRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF2A7237CA3BC006A7268 /* BackendGetTaxiRequest.m */; };
 		5B7BF2AB237CAEAD006A7268 /* BackendErrorParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF2AA237CAEAD006A7268 /* BackendErrorParser.m */; };
 		5B7BF2AE237CAF1C006A7268 /* NSError+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BF2AD237CAF1C006A7268 /* NSError+Convenience.m */; };
+		5B7E4144238329BC001D53E3 /* taxiData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B7E4143238329BC001D53E3 /* taxiData.json */; };
+		5B7E414723832A1D001D53E3 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E414623832A1D001D53E3 /* PreviewData.swift */; };
+		5B7E414923832A89001D53E3 /* Taxi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E414823832A89001D53E3 /* Taxi.swift */; };
+		5B7E414B23832B3C001D53E3 /* FleetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E414A23832B3C001D53E3 /* FleetType.swift */; };
+		5B7E414D23832F0D001D53E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E414C23832F0D001D53E3 /* MainView.swift */; };
+		5B7E415123833014001D53E3 /* TaxiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E415023833014001D53E3 /* TaxiRow.swift */; };
+		5B7E4154238332C0001D53E3 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E4153238332C0001D53E3 /* Coordinate.swift */; };
+		5B7E415C238334E1001D53E3 /* DriverSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E415B238334E1001D53E3 /* DriverSearchTests.swift */; };
+		5B7E41642383350C001D53E3 /* JsonMappingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E41632383350C001D53E3 /* JsonMappingTest.swift */; };
+		5B7E41682383E9F2001D53E3 /* TaxiListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E41672383E9F2001D53E3 /* TaxiListViewModel.swift */; };
+		5B7E416A2383F2B0001D53E3 /* TaxiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E41692383F2B0001D53E3 /* TaxiViewModel.swift */; };
+		5B7E416C238428F9001D53E3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E416B238428F9001D53E3 /* MapView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B7E416523833AAE001D53E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B004D8A237C854B001AB962 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B004D91237C854B001AB962;
+			remoteInfo = DriverSearch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B004D92237C854B001AB962 /* DriverSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriverSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B004D95237C854B001AB962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B004D97237C854B001AB962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5B004D99237C854B001AB962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B004D9C237C854B001AB962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B004D9E237C854C001AB962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B004DA1237C854C001AB962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B004DA3237C854C001AB962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B29CE07237D4C7100AA4405 /* Taxi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Taxi.h; sourceTree = "<group>"; };
-		5B29CE08237D4C7100AA4405 /* Taxi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Taxi.m; sourceTree = "<group>"; };
+		5B29CE07237D4C7100AA4405 /* ReceivedTaxi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReceivedTaxi.h; sourceTree = "<group>"; };
+		5B29CE08237D4C7100AA4405 /* ReceivedTaxi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReceivedTaxi.m; sourceTree = "<group>"; };
 		5B29CE0A237D550900AA4405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B3B506D238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Addons.swift"; sourceTree = "<group>"; };
+		5B4FFF5F238AC44A00C18BE5 /* BoundingBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundingBox.swift; sourceTree = "<group>"; };
+		5B4FFF61238ACA7300C18BE5 /* TaxiAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiAnnotation.swift; sourceTree = "<group>"; };
 		5B7BF26C237C8D34006A7268 /* DriverSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DriverSearch-Bridging-Header.h"; sourceTree = "<group>"; };
 		5B7BF297237CA026006A7268 /* BackendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendRequest.h; sourceTree = "<group>"; };
 		5B7BF298237CA026006A7268 /* BackendRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendRequest.m; sourceTree = "<group>"; };
@@ -52,6 +78,20 @@
 		5B7BF2AA237CAEAD006A7268 /* BackendErrorParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendErrorParser.m; sourceTree = "<group>"; };
 		5B7BF2AC237CAF1C006A7268 /* NSError+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Convenience.h"; sourceTree = "<group>"; };
 		5B7BF2AD237CAF1C006A7268 /* NSError+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Convenience.m"; sourceTree = "<group>"; };
+		5B7E4143238329BC001D53E3 /* taxiData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = taxiData.json; sourceTree = "<group>"; };
+		5B7E414623832A1D001D53E3 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		5B7E414823832A89001D53E3 /* Taxi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taxi.swift; sourceTree = "<group>"; };
+		5B7E414A23832B3C001D53E3 /* FleetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetType.swift; sourceTree = "<group>"; };
+		5B7E414C23832F0D001D53E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5B7E415023833014001D53E3 /* TaxiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiRow.swift; sourceTree = "<group>"; };
+		5B7E4153238332C0001D53E3 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		5B7E4159238334E1001D53E3 /* DriverSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DriverSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7E415B238334E1001D53E3 /* DriverSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverSearchTests.swift; sourceTree = "<group>"; };
+		5B7E415D238334E1001D53E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B7E41632383350C001D53E3 /* JsonMappingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMappingTest.swift; sourceTree = "<group>"; };
+		5B7E41672383E9F2001D53E3 /* TaxiListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiListViewModel.swift; sourceTree = "<group>"; };
+		5B7E41692383F2B0001D53E3 /* TaxiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiViewModel.swift; sourceTree = "<group>"; };
+		5B7E416B238428F9001D53E3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7E4156238334E1001D53E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5B004D94237C854B001AB962 /* DriverSearch */,
+				5B7E415A238334E1001D53E3 /* DriverSearchTests */,
 				5B004D93237C854B001AB962 /* Products */,
 				5B004DD6237C8601001AB962 /* Frameworks */,
 			);
@@ -79,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5B004D92237C854B001AB962 /* DriverSearch.app */,
+				5B7E4159238334E1001D53E3 /* DriverSearchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,18 +135,19 @@
 		5B004D94237C854B001AB962 /* DriverSearch */ = {
 			isa = PBXGroup;
 			children = (
+				5B7E414F23832F3E001D53E3 /* Views */,
 				5B29CE06237D4B8900AA4405 /* Model */,
 				5B7BF299237CA026006A7268 /* Backend Configuration */,
 				5B7BF296237CA026006A7268 /* Request */,
 				5B7BF29C237CA026006A7268 /* Services */,
-				5B004D95237C854B001AB962 /* AppDelegate.swift */,
-				5B004D97237C854B001AB962 /* SceneDelegate.swift */,
-				5B004D99237C854B001AB962 /* ViewController.swift */,
-				5B004D9B237C854B001AB962 /* Main.storyboard */,
-				5B004D9E237C854C001AB962 /* Assets.xcassets */,
-				5B004DA0237C854C001AB962 /* LaunchScreen.storyboard */,
-				5B004DA3237C854C001AB962 /* Info.plist */,
+				5B3B506C238AB52700876A3C /* Extensions */,
+				5B7E414E23832F2C001D53E3 /* AppDelegate */,
+				5B7E41422383293E001D53E3 /* Resources */,
 				5B7BF26C237C8D34006A7268 /* DriverSearch-Bridging-Header.h */,
+				5B004DA3237C854C001AB962 /* Info.plist */,
+				5B004D9B237C854B001AB962 /* Main.storyboard */,
+				5B004DA0237C854C001AB962 /* LaunchScreen.storyboard */,
+				5B004D9E237C854C001AB962 /* Assets.xcassets */,
 			);
 			path = DriverSearch;
 			sourceTree = "<group>";
@@ -113,19 +163,58 @@
 		5B29CE06237D4B8900AA4405 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B29CE07237D4C7100AA4405 /* Taxi.h */,
-				5B29CE08237D4C7100AA4405 /* Taxi.m */,
+				5B7E414623832A1D001D53E3 /* PreviewData.swift */,
+				5B7E414A23832B3C001D53E3 /* FleetType.swift */,
+				5B7E4153238332C0001D53E3 /* Coordinate.swift */,
+				5B7E414823832A89001D53E3 /* Taxi.swift */,
+				5B7E41692383F2B0001D53E3 /* TaxiViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5B3B506C238AB52700876A3C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B3B506D238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B3B506F238AB7DE00876A3C /* GetTaxi */ = {
+			isa = PBXGroup;
+			children = (
+				5B7BF2A6237CA3BC006A7268 /* BackendGetTaxiRequest.h */,
+				5B7BF2A7237CA3BC006A7268 /* BackendGetTaxiRequest.m */,
+				5B29CE07237D4C7100AA4405 /* ReceivedTaxi.h */,
+				5B29CE08237D4C7100AA4405 /* ReceivedTaxi.m */,
+			);
+			path = GetTaxi;
+			sourceTree = "<group>";
+		};
+		5B3B5070238AB7EA00876A3C /* BackendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				5B7BF297237CA026006A7268 /* BackendRequest.h */,
+				5B7BF298237CA026006A7268 /* BackendRequest.m */,
+			);
+			path = BackendRequest;
+			sourceTree = "<group>";
+		};
+		5B4FFF5E238AC43600C18BE5 /* Map View */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E416B238428F9001D53E3 /* MapView.swift */,
+				5B4FFF5F238AC44A00C18BE5 /* BoundingBox.swift */,
+				5B4FFF61238ACA7300C18BE5 /* TaxiAnnotation.swift */,
+			);
+			path = "Map View";
 			sourceTree = "<group>";
 		};
 		5B7BF296237CA026006A7268 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				5B7BF297237CA026006A7268 /* BackendRequest.h */,
-				5B7BF298237CA026006A7268 /* BackendRequest.m */,
-				5B7BF2A6237CA3BC006A7268 /* BackendGetTaxiRequest.h */,
-				5B7BF2A7237CA3BC006A7268 /* BackendGetTaxiRequest.m */,
+				5B3B5070238AB7EA00876A3C /* BackendRequest */,
+				5B3B506F238AB7DE00876A3C /* GetTaxi */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -171,6 +260,44 @@
 			path = "Service Registry";
 			sourceTree = "<group>";
 		};
+		5B7E41422383293E001D53E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E4143238329BC001D53E3 /* taxiData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B7E414E23832F2C001D53E3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5B004D95237C854B001AB962 /* AppDelegate.swift */,
+				5B004D97237C854B001AB962 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5B7E414F23832F3E001D53E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E414C23832F0D001D53E3 /* MainView.swift */,
+				5B7E415023833014001D53E3 /* TaxiRow.swift */,
+				5B7E41672383E9F2001D53E3 /* TaxiListViewModel.swift */,
+				5B4FFF5E238AC43600C18BE5 /* Map View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B7E415A238334E1001D53E3 /* DriverSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E415B238334E1001D53E3 /* DriverSearchTests.swift */,
+				5B7E41632383350C001D53E3 /* JsonMappingTest.swift */,
+				5B7E415D238334E1001D53E3 /* Info.plist */,
+			);
+			path = DriverSearchTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,19 +318,41 @@
 			productReference = 5B004D92237C854B001AB962 /* DriverSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5B7E4158238334E1001D53E3 /* DriverSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7E4160238334E1001D53E3 /* Build configuration list for PBXNativeTarget "DriverSearchTests" */;
+			buildPhases = (
+				5B7E4155238334E1001D53E3 /* Sources */,
+				5B7E4156238334E1001D53E3 /* Frameworks */,
+				5B7E4157238334E1001D53E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B7E416623833AAE001D53E3 /* PBXTargetDependency */,
+			);
+			name = DriverSearchTests;
+			productName = DriverSearchTests;
+			productReference = 5B7E4159238334E1001D53E3 /* DriverSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5B004D8A237C854B001AB962 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1110;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = DebuggingHell;
 				TargetAttributes = {
 					5B004D91237C854B001AB962 = {
 						CreatedOnToolsVersion = 11.1;
 						LastSwiftMigration = 1110;
+					};
+					5B7E4158238334E1001D53E3 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 5B004D91237C854B001AB962;
 					};
 				};
 			};
@@ -221,6 +370,7 @@
 			projectRoot = "";
 			targets = (
 				5B004D91237C854B001AB962 /* DriverSearch */,
+				5B7E4158238334E1001D53E3 /* DriverSearchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,8 +381,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B004DA2237C854C001AB962 /* LaunchScreen.storyboard in Resources */,
+				5B7E4144238329BC001D53E3 /* taxiData.json in Resources */,
 				5B004D9F237C854C001AB962 /* Assets.xcassets in Resources */,
 				5B004D9D237C854B001AB962 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7E4157238334E1001D53E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,21 +401,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7E416A2383F2B0001D53E3 /* TaxiViewModel.swift in Sources */,
 				5B7BF2A5237CA027006A7268 /* BackendService.m in Sources */,
-				5B29CE09237D4C7100AA4405 /* Taxi.m in Sources */,
+				5B29CE09237D4C7100AA4405 /* ReceivedTaxi.m in Sources */,
 				5B7BF2A8237CA3BC006A7268 /* BackendGetTaxiRequest.m in Sources */,
+				5B3B506E238AB55100876A3C /* CLLocationCoordinate2D+Addons.swift in Sources */,
 				5B7BF2A2237CA027006A7268 /* BackendRequest.m in Sources */,
 				5B7BF2A4237CA027006A7268 /* ProductionServiceRegistry.m in Sources */,
-				5B004D9A237C854B001AB962 /* ViewController.swift in Sources */,
+				5B7E414923832A89001D53E3 /* Taxi.swift in Sources */,
+				5B7E41682383E9F2001D53E3 /* TaxiListViewModel.swift in Sources */,
+				5B4FFF60238AC44A00C18BE5 /* BoundingBox.swift in Sources */,
+				5B7E415123833014001D53E3 /* TaxiRow.swift in Sources */,
 				5B004D96237C854B001AB962 /* AppDelegate.swift in Sources */,
+				5B4FFF62238ACA7300C18BE5 /* TaxiAnnotation.swift in Sources */,
+				5B7E414B23832B3C001D53E3 /* FleetType.swift in Sources */,
 				5B7BF2A3237CA027006A7268 /* BackendConfiguration.m in Sources */,
+				5B7E414D23832F0D001D53E3 /* MainView.swift in Sources */,
+				5B7E414723832A1D001D53E3 /* PreviewData.swift in Sources */,
 				5B7BF2AB237CAEAD006A7268 /* BackendErrorParser.m in Sources */,
+				5B7E416C238428F9001D53E3 /* MapView.swift in Sources */,
 				5B004D98237C854B001AB962 /* SceneDelegate.swift in Sources */,
+				5B7E4154238332C0001D53E3 /* Coordinate.swift in Sources */,
 				5B7BF2AE237CAF1C006A7268 /* NSError+Convenience.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7E4155238334E1001D53E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7E41642383350C001D53E3 /* JsonMappingTest.swift in Sources */,
+				5B7E415C238334E1001D53E3 /* DriverSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B7E416623833AAE001D53E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B004D91237C854B001AB962 /* DriverSearch */;
+			targetProxy = 5B7E416523833AAE001D53E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B004D9B237C854B001AB962 /* Main.storyboard */ = {
@@ -434,6 +620,48 @@
 			};
 			name = Release;
 		};
+		5B7E4161238334E1001D53E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BE4CWML7BN;
+				INFOPLIST_FILE = DriverSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsdrive.app.DriverSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriverSearch.app/DriverSearch";
+			};
+			name = Debug;
+		};
+		5B7E4162238334E1001D53E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BE4CWML7BN;
+				INFOPLIST_FILE = DriverSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.letsdrive.app.DriverSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DriverSearch.app/DriverSearch";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +679,15 @@
 			buildConfigurations = (
 				5B004DA7237C854C001AB962 /* Debug */,
 				5B004DA8237C854C001AB962 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7E4160238334E1001D53E3 /* Build configuration list for PBXNativeTarget "DriverSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7E4161238334E1001D53E3 /* Debug */,
+				5B7E4162238334E1001D53E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
