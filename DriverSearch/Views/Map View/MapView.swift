@@ -71,10 +71,9 @@ class MapViewCoordinator: NSObject, MKMapViewDelegate {
     }
 }
 
-//struct MapView_Previews: PreviewProvider {
-//    @State var taxis = taxiData
-//    static var previews: some View {
-//        let coordinate = CLLocationCoordinate2D.init(latitude: taxiData[0].coordinate.latitude, longitude: taxiData[0].coordinate.longitude)
-//        return MapView(taxis: $taxis, coordinate: coordinate)
-//    }
-//}
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        let coordinate = CLLocationCoordinate2D.init(latitude: taxiData[0].coordinate.latitude, longitude: taxiData[0].coordinate.longitude)
+        return MapView(taxis: .constant(taxiData), coordinate: coordinate)
+    }
+}
